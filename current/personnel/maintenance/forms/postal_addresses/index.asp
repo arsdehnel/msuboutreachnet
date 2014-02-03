@@ -1,0 +1,3 @@
+<link type="text/css" href="/css/frm_event_information.css" rel="stylesheet">
+<iframe width="500" src="/personnel/maintenance/forms/postal_addresses/iframe.asp?which=<%=Request.QueryString("which")%>" class="sfrm_iframe" frameborder="0" name="sfrm_personnel_postal_addresses"></iframe>
+<div align="right" style="width: 850;"><input type="button" onClick="sfrm_personnel_postal_addresses.location.href='/personnel/maintenance/forms/postal_addresses/form.asp?address_id=0&personnel_id=<%=Request.QueryString("which")%>'" value="Add New Postal Address" style="width: 200px;"></div>

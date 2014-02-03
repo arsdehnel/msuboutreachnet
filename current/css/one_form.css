@@ -1,0 +1,58 @@
+th{
+	background-color: #FFFFFF;
+	color: #333333;
+}
+
+table.subtable td{
+	border: 1px solid #000000;
+}
+.oneform_budget_section_header{
+	background-color: #CCCCCC;
+	color: #000066;
+	font-weight: bold;
+	padding: 6px;
+}
+em.oneform_budget_note{
+	font-size: 10px;
+	display: block;
+}
+.column_1{
+	width: 30px;
+	text-align: center;
+	font-size: 10px;
+	background-color: #EEEEEE;
+}
+.empty{
+	background-color: #FFFFFF;
+}
+.column_2{
+	width: 125px;
+	padding-left: 3px;
+}
+.column_3, .column_4, .column_5{
+	width: 115px;
+	text-align: center;
+	padding: 0 2px;
+}
+.column_5{
+	background-color: #EEEEEE;
+}
+.column_6{
+	width: 100px;
+	text-align: center;
+	font-size: 10px;
+	background-color: #EEEEEE;
+}
+.column_7, .column_8, .column_9{
+	width: 50px;
+	padding: 0 2px;
+	text-align: center;
+	background-color: #EEEEEE;
+}
+td.spacer{
+	height: 20px;
+	border: 0px;
+}
+.disabled_input{
+	background-color: #EFEFEF;
+}

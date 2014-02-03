@@ -1,0 +1,21 @@
+body
+{
+	font-size: 14px;
+}
+div#header,
+div#footer_menu
+{
+	display: none;
+}
+
+div#page_wrapper
+{
+	border-width: 0;
+}
+
+.approvals_table{
+	width: 650px;
+}
+#event_form_box{
+	width: 650px;
+}

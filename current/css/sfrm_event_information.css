@@ -1,0 +1,16 @@
+.event_listings_actions_box a{
+	padding: 1px 3px;
+	margin: 0px 4px;
+	border: 1px solid #FFCC33;
+	background-color: #333399;
+	color: #FFFFFF;
+	font-weight: bold;
+	width: 60px;
+	text-align: center;
+	text-decoration: none;
+}
+.event_listings_actions_box a:hover{
+	background-color: #FFCC33;
+	color: #333399;
+	border: 1px solid #333399;
+}

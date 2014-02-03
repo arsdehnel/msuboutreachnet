@@ -1,0 +1,855 @@
+/* ----------------------------------------------------------------------------------------------------------------------------
+   --------------------------------------------------------- LAYOUT -----------------------------------------------------------
+   ---------------------------------------------------------------------------------------------------------------------------- */
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #002f5f url(/images/layout/bg.png) repeat-x;
+	font-family: Arial;
+	font-size: 12px; 
+	color: #002f5f;
+	line-height: 1.3em;	
+}
+body.iframe{
+	background: #eeeeee;
+	font-family: Arial;
+	font-size: 12px; 
+	color: #002f5f;
+	line-height: 1.3em;	
+}
+div#page_wrapper{
+	width: 990px;
+	margin: 14px auto 4px;
+	background: #ffffff;
+	min-height: 580px;
+	border: 1px solid #f0b310;
+	padding-bottom: 20px;
+}
+div#page_wrapper div#content
+{
+	padding: 8px;
+}
+div#page_wrapper div#main_content
+{
+	display: inline;
+	padding: 2px;
+	z-index: 10;
+	float: left;
+	margin: 0px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------
+   --------------------------------------------------------- HEADER -----------------------------------------------------------
+   ---------------------------------------------------------------------------------------------------------------------------- */
+div#header
+{
+	display: block;
+	width: 100%;
+	vertical-align: text-top;
+	background: #f0e0b4 url("/images/nav/bg.png") repeat-x bottom;	
+	padding-bottom: 28px;
+	*padding-bottom: 1px;
+}
+div#header img#logo{
+	margin: 6px 30px 0px 6px;
+	max-height: 90px; 
+}
+
+div#header img#subhead{
+	margin: 20px 0 0 30px;
+	vertical-align: top;
+}
+#site_title {
+	font-family: Calisto MT, Georgia, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #002f5f;
+	text-align: left;
+	padding: 9px 5px 5px;
+}
+#site_title a{
+	color: #002f5f;
+	text-decoration: none
+}
+#site_title a:hover{
+	text-decoration: underline;
+}
+#page_title{
+	font-family: Calisto MT, Georgia, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #333399;
+	text-align: left;
+	padding: 3px;
+	background-color: #FFFFFF;
+	border-bottom: 3px double #FFCC33;
+	margin-bottom: 10px;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------
+   --------------------------------------------------------- FOOTER MENU ------------------------------------------------------
+   ---------------------------------------------------------------------------------------------------------------------------- */
+div#footer_menu
+{
+	text-align: right;
+	font-family: Arial;
+	font-size: 12px;
+	width: 990px;
+	margin: 0 auto;
+	color: #f0e0b4;
+}
+
+div#footer_menu ul
+{
+	float: right;
+	margin: 0;
+	padding: 0 10px;
+	list-style: none;
+}
+div#footer_menu ul li
+{
+	display: inline;
+	margin: 0;
+	padding: 0 0 0 8px;
+}
+
+div#footer_menu ul li a
+{
+	font-weight: bold;
+	color: #fff;
+	padding: 0 4px;
+	text-decoration: none;
+}
+
+div#footer_menu ul li a:hover{
+	text-decoration: underline;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------
+   --------------------------------------------------------- TEXTS ------------------------------------------------------------
+   ---------------------------------------------------------------------------------------------------------------------------- */
+h1
+{
+	font-family: arial;
+	font-size: 14px;
+	margin: 2px;
+	padding: 2px;
+	border-bottom: 1px solid #002f5f;
+}   
+   
+/* ----------------------------------------------------------------------------------------------------------------------------
+   --------------------------------------------------------- MENU STYLES ------------------------------------------------------
+   ---------------------------------------------------------------------------------------------------------------------------- */
+div#header ol.navbar
+{
+	position: relative;
+	/*clear: both;*/
+	width: 980px;
+	margin: 0 0 0 5px;
+	padding: 0;
+	list-style: none;
+	float: right;
+	z-index: 2000;
+}
+
+div#header ol.navbar li.menuItem
+{
+	background: url(/images/nav/left.png) top left no-repeat;
+	float: left;
+	display: inline;
+	margin: 1px 4px 0px 0px;
+	padding: 0 0 0 8px;
+	width: 183px;
+	cursor: pointer;
+	position: relative;
+	font-size: 11px;
+}
+
+div#header ol.navbar li.menuItem a
+{
+	background: url(/images/nav/right.png) top right no-repeat;
+	padding:8px 15px 3px 6px;
+	display: block;
+	text-decoration: none;
+	color: #002f5f;
+	font-weight: bold;
+}
+
+div#header ol.navbar ol.subnav
+{
+	padding: 0px;
+	margin: 6px 0 0 0;
+	list-style: none;
+	color: #002f5f;
+	position: absolute;
+	left: -999em;
+	border: 1px solid #002f5f;
+	background-color: #e3e3e3;
+	background-image: none;
+	font-size: 10px;
+	font-weight: bold;
+	z-index: 1000;
+}
+
+div#header ol.navbar li ol.subnav li
+{
+	padding: 0px;
+	margin: 0px;
+	width: 191px;
+	float: left;
+	clear: both;
+}
+
+div#header ol.navbar li ol.subnav li a, 
+div#header ol.navbar li ol.subnav li ol.subnav li a,
+div#header ol.navbar li#current ol.subnav li a
+{
+	display: block;
+	margin: 0px;
+	padding: 2px 4px;
+	width: 183px;
+	text-decoration: none;
+	color: #002f5f;
+	background-image: none;
+}
+
+div#header ol.navbar li ol.subnav li:hover, 
+div#header ol.navbar li ol.subnav li.sfhover,
+div#header ol.navbar li#current ol.subnav li:hover, 
+div#header ol.navbar li#current ol.subnav li.sfhover
+{
+	background-color: #002f5f;
+}
+
+div#header ol.navbar li ol.subnav li:hover a, 
+div#header ol.navbar li ol.subnav li.sfhover a:hover, 
+div#header ol.navbar li ol.subnav li ol.subnav li:hover a, 
+div#header ol.navbar li ol.subnav li.sfhover ol.subnav li.sfhover a,
+div#header ol.navbar li#current ol.subnav li:hover a, 
+div#header ol.navbar li#current ol.subnav li.sfhover a:hover, 
+div#header ol.navbar li#current ol.subnav li ol.subnav li:hover a, 
+div#header ol.navbar li#current ol.subnav li.sfhover ol.subnav li.sfhover a
+{
+	color: #f0b310;
+	text-decoration: none;
+}
+
+ol.subnav li a, 
+ol.subnav li ol.subnav li a
+{
+	_color: #2f4f4f !important;
+}
+
+ol.subnav li.sfhover a, 
+ol.subnav li.sfhover a, 
+ol.subnav li.sfhover ol.subnav li.sfhover a
+{
+	_color: #e3e3e3 !important;
+}
+
+div#header ol.navbar li:hover ol.subnav, 
+div#header ol.navbar li.sfhover ol.subnav
+{
+	left: -1px;
+	top: 20px;
+	_top: 19px;
+}
+
+div#header ol.navbar li:hover ol.subnav li:hover ol.subnav, 
+div#header ol.navbar li.sfhover ol.subnav li.sfhover ol.subnav
+{
+	left: auto;
+	top: auto;
+}
+
+div#header ol.navbar li ol.subnav li ol.subnav
+{
+	margin: -21px 0px 0px 200px;
+}
+
+ol.navbar ol.subnav
+{
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	background-image: none;
+}
+
+div#header ol.navbar li:hover ol.subnav ol.subnav, 
+div#header ol.navbar li.sfhover ol.subnav ol.subnav
+{
+	left: -999em;
+}
+
+/* Begin Right Aligning Menus */
+
+div#header ol.navbar ol.subnav.right
+{
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	color: #676767;
+	position: absolute;
+	left: -999em;
+	border: 1px solid #c7c7c7;
+	background-color: #e3e3e3;
+	font-size: 10px;
+	font-weight: bold;
+	width: 200px;
+}
+
+div#header ol.navbar li ol.subnav.right li
+{
+	padding: 0px;
+	margin: 0px;
+	width: 200px;
+	float: right;
+	clear: both;
+}
+
+div#header ol.navbar li ol.subnav.right li a, 
+div#header ol.navbar li ol.subnav.right li ol.subnav.right li a
+{
+	display: block;
+	margin: 4px;
+	padding: 0px;
+	width: 192px;
+	text-decoration: none;
+	color: #676767;
+	text-align: left;
+}
+
+div#header ol.navbar li ol.subnav.right li:hover, 
+div#header ol.navbar li ol.subnav.right li.sfhover
+{
+	background-color: #676767;
+}
+
+div#header ol.navbar li ol.subnav.right li:hover a, 
+div#header ol.navbar li ol.subnav.right li.sfhover a:hover, 
+div#header ol.navbar li ol.subnav.right li ol.subnav.right li:hover a, 
+div#header ol.navbar li ol.subnav.right li.sfhover ol.subnav.right li.sfhover a
+{
+	color: #e3e3e3;
+}
+
+ol.subnav.right li a, 
+ol.subnav.right li ol.subnav.right li a
+{
+	_color: #676767 !important;
+}
+
+ol.subnav.right li.sfhover a, 
+ol.subnav.right li.sfhover ol.subnav.right li.sfhover a
+{
+	_color: #e3e3e3 !important;
+}
+
+div#header ol.navbar li:hover ol.subnav.right, 
+div#header ol.navbar li.sfhover ol.subnav.right
+{
+	left: -89px;
+	top: 20px;
+	_top: 19px;
+}
+
+div#header ol.navbar li:hover ol.subnav.right li:hover ol.subnav.right, 
+div#header ol.navbar li.sfhover ol.subnav.right li.sfhover ol.subnav.right
+{
+	left: auto;
+	top: auto;
+}
+
+div#header ol.navbar li ol.subnav.right li ol.subnav.right
+{
+	margin: -21px 0px 0px -202px;
+}
+
+ol.navbar ol.subnav.right
+{
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+div#header ol.navbar li:hover ol.subnav.right ol.subnav.right, 
+div#header ol.navbar li.sfhover ol.subnav.right ol.subnav.right
+{
+	left: -999em;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------
+   --------------------------------------------------------- FORMS ------------------------------------------------------------
+   ---------------------------------------------------------------------------------------------------------------------------- */
+form.form_large
+{
+	width: 900px;
+	margin: 0 auto;
+}
+.action_box,
+.button_group{
+	text-align: center;
+	padding-top: 12px;
+	margin-bottom: 12px; 
+	clear: both;
+}
+input:focus, select:focus, textarea: focus{
+	background-color: #FFEEBB;
+	color: #333399;
+	font-weight: bold;
+}
+label{
+    clear: left;
+    float: left;
+    padding-right: 2px;
+    text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #002f45f;
+	font-weight: bold;
+	margin: 2px;
+	text-align: left;
+	width: 100px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	vertical-align: top;
+	text-align: left;
+	margin-top: 5px;
+}
+input, textarea, select{
+	margin: 2px 0px;
+	text-align: left;
+	padding: 2px;
+	border: 1px solid #002f5f;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #002f5f;
+	margin: 2px 0px;
+}
+input.button{
+	width: 150px;
+	margin: 4px;
+	text-align: center;
+    clear: none;
+    float: none;
+	margin: -18px 0 -25px 0;
+}
+input.hidden{
+	display: none;
+    clear: none;
+    float: none;
+}
+#login_form{
+	display: block;
+	width: 250px;
+	margin: 0 auto;
+}
+.datepicker
+{
+	width: 60px;
+}
+/* -------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- BUTTONS ---------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------- */
+    .btn {
+      display:inline-block;
+      background:none;
+      margin: 0;
+      padding:3px;
+      border-width:0;
+      overflow:visible;
+      font:100%/1.2 Arial,Sans-serif;
+      text-decoration:none;
+      color:#331306;
+      }
+    * html button.btn {
+      padding-bottom:1px;
+      }
+    /* Immediately below is a temporary hack to serve the 
+       following margin values only to Gecko browsers
+       Gecko browsers add an extra 3px of left/right 
+       padding to button elements which can't be overriden.
+       Thus, we use -3px of left/right margin to overcome this. */
+    html:not([lang*=""]) button.btn {
+      margin:0 -3px;
+      }
+    .btn span {
+      background:#ddd url(/images/bg-button.gif) repeat-x 0 0;
+      margin:0;
+      padding:3px 0;
+      border-left:1px solid #bbb;
+      border-right:1px solid #aaa;
+      }
+    * html .btn span {
+      padding-top:0;
+      }
+    .btn span span {
+      position:relative;
+      padding:3px .4em;
+      border-width:0;
+      border-top:1px solid #bbb;
+      border-bottom:1px solid #aaa;
+      }
+    
+    /* pill classes only needed if using pill style buttons ( LEFT | CENTER | RIGHT ) */
+    button.pill-l span {
+      border-right-width:0;
+      }
+    button.pill-l span span {
+      border-right:1px solid #bbb;
+      }
+    button.pill-c span {
+      border-right-style:none;
+      border-left-color:#fff;
+      }
+    button.pill-c span span {
+      border-right:1px solid #bbb;
+      }
+    button.pill-r span {
+      border-left-color:#fff;
+      }
+    
+    /* only needed if implementing separate hover/focus/active state for buttons */
+    .btn:hover span, .btn:hover span span, .btn:focus span, .btn:focus span span {
+      cursor:pointer; /* important for any clickable/pressable element */
+      border-color:#331306 !important;
+      color:#000;
+      }
+    .btn:active span {
+      background-position:0 -400px;
+      outline:none;
+      }
+    .btn:focus, .btn:active {
+      outline:none; /* doesn't seem to be respected for <button>, only <a> */
+      }
+
+    /* use if one button should be the 'primary' button */
+    .primary {
+      font-weight:bold;
+      color:#000;
+      }
+      
+      a.secondary_button,
+button.secondary_button
+{
+	margin: 8px;
+	font-size: 10px;
+	font-weight: bold;
+}
+a.secondary_button,
+button.secondary_button
+{
+  display:inline-block;
+  background:none;
+  text-decoration: underline;
+  border: 0;
+  color: #331306;
+  cursor: pointer;
+}
+a.secondary_button:hover,
+button.secondary_button:hover
+{
+  text-decoration: none;
+}
+
+
+/* -------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- LEGACY STYLES ---------------------------------------- */
+/* -------------------------------------------------------------------------------------------------- */
+.rc_section_title{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: left;
+	padding: 4px;
+	border-bottom: 1px solid #FFCC33;
+	background-color: #333399;
+}
+.sfrm_section_title{
+	color: #FFFFFF;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 3px 5px;
+	border-bottom: 2px solid #333399;
+	margin: 6px 0px 2px 0px;
+	background-color: #999999;
+}
+.no_records_box{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333399;
+	font-weight: bold;
+	text-align: left;
+	padding: 4px;
+}
+.section_title{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #333399;
+	font-weight: bold;
+	text-align: left;
+	padding: 4px;
+	border-bottom: 1px solid #333399;
+}
+.help_link{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: italic;
+}
+.help_link a{
+	color: #333399;
+}
+.help_link a:hover{
+	text-decoration: none;
+}
+
+.cpsll_header{
+	line-height: 1.3em;
+	text-align: center;
+	font-family: Calisto MT, Arial;
+	font-size: 20px;
+	font-weight: bold;
+}
+.form_header{
+	line-height: 1.3em;
+	text-align: center;
+	font-family: Calisto MT, Arial;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+#event_form_box{
+	width: 700px;
+}
+.event_form_detail{
+	font-family: Arial;
+	font-size: 14px;
+	color: #333399;
+	text-align: left;
+	padding: 6px 3px;
+}
+.ef_section_title{
+	font-family: Arial;
+	font-size: 14px;
+	color: #333399;
+	text-align: left;
+	padding: 3px 3px;
+	background-color: #CCCCCC;
+	font-weight: bold;
+}
+/* -------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------- FORM TABS -------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------- */
+div.tabs_wrapper
+{
+	margin: 0 auto;
+	width: 940px;
+}
+
+ul.tab_bar
+{
+	display: block;
+	width: 880px;
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	z-index: 50;
+	height: 25px;
+}
+
+ul.tab_bar li
+{
+	background: url(/images/form_tabs/left.png) top left no-repeat;
+	float: left;
+	display: inline;
+	margin: 1px 1px 0 0;
+	padding: 0 0 0 8px;
+	cursor: pointer;
+	position: relative;
+	font-size: 11px;
+}
+
+ul.tab_bar li.current
+{
+	background: url(/images/form_tabs/left_on.png) top left no-repeat;
+}
+
+ul.tab_bar li.current a
+{
+	background: url(/images/form_tabs/right_on.png) top right no-repeat;
+	color: #ffff00;
+}
+
+ul.tab_bar li a
+{
+	background: url(/images/form_tabs/right.png) top right no-repeat;
+	padding: 6px 9px 3px 0px;
+	display: block;
+	text-decoration: none;
+	color: #002f5f;
+	font-weight: bold;
+}
+ul.tab_bar li a:hover
+{
+	cursor: pointer;
+}
+ul.tab_box
+{
+	display: block;
+	list-style: none;
+}
+ul.tab_box li
+{
+	display: none;
+}
+ul.tab_box li.current
+{
+	height: 400px;
+	display: block;
+	border: 1px solid #002f5f;
+}
+ul.tab_box li div.subform
+{
+	height: 375px;
+	overflow-y: scroll;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------ Modal Window -------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+#modal_wrapper {
+	display: none;
+	position: fixed;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+}
+
+/* For IE6. */
+* html #modal_wrapper {
+	position: absolute;
+}
+
+#modal_overlay,
+#modal_iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+* html #modal_iframe {
+	filter: alpha(opacity = 0.1);
+}
+
+#modal_overlay {
+	background: #000;
+	opacity: 0.4;
+	filter: alpha(opacity = 40);
+}
+
+#modal_window {
+	visibility: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+#modal_window {
+	background: #fff;
+	border: 2px solid #000;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 1px 20px 0;
+	width: 500px;
+}
+
+#modal_bar {
+	background: #ccc url(/images/modal/gradient.gif) repeat-x;
+	border: 1px solid;
+	border-color: #eee #ccc #999;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	margin: 0 -19px;
+	padding: 5px 10px;
+	position: relative;
+}
+
+#modal_content {
+	overflow: hidden;
+	margin: 10px;
+}
+
+#modal_content object,
+#modal_content embed {
+	display: block;
+	margin: 0 auto;
+}
+
+#modal_content img {
+	display: none;
+}
+
+#modal_content img.modal_placeholder {
+	visibility: hidden;
+	width: 100%;
+	height: 100px;
+}
+
+#modal_image_wrapper {
+	background: url(/images/modal/loading.gif) no-repeat center center;
+}
+
+#modal_image_wrapper img {
+	display: block;
+	margin: 0 auto;
+}
+
+#modal_close {
+	background: url(/images/icons/close.gif) no-repeat;
+	cursor: default;
+	font-size: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 4px;
+	right: 5px;
+	text-decoration: none;
+	text-indent: -9999px;
+	width: 28px;
+	height: 15px;
+}
+
+#modal_close:hover {
+	background-position: left bottom;
+}
+
+table.data_grid
+{
+	margin: 4px auto;
+	border: 1px solid #999;
+}
+
+table.data_grid th,
+table.data_grid td
+{
+	border: 1px solid #999;
+	padding: 4px 8px;
+}

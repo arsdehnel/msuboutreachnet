@@ -1,0 +1,25 @@
+BODY{
+	background-color: #CCCCCC;
+	margin: 2px;
+}
+table{
+	border: 1px solid #333399;
+}
+th{
+	background-color: #333399;
+	color: #FFFFFF;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 11px;
+	padding: 2px;
+	border: 1px solid #333399;
+}
+td{
+	color: #333399;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 11px;
+	padding: 2px;
+	border: 1px solid #333399;
+}
+.no_border{
+	border: 0px;
+}

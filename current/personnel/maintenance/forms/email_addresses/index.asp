@@ -1,0 +1,3 @@
+<link type="text/css" href="/css/frm_event_information.css" rel="stylesheet">
+<iframe width="500" src="/personnel/maintenance/forms/email_addresses/iframe.asp?which=<%=Request.QueryString("which")%>" class="sfrm_iframe" frameborder="0" name="sfrm_personnel_email_addresses"></iframe>
+<div align="right" style="width: 850;"><input type="button" onClick="sfrm_personnel_email_addresses.location.href='/personnel/maintenance/forms/email_addresses/form.asp?email_id=0&personnel_id=<%=Request.QueryString("which")%>'" value="Add New E-mail Address" style="width: 200px;"></div>

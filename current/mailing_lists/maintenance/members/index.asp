@@ -1,0 +1,2 @@
+<link type="text/css" href="/css/frm_event_information.css" rel="stylesheet">
+<iframe width="500" src="/mailing_lists/maintenance/members/iframe.asp?which=<%=Request.QueryString("which")%>" class="sfrm_iframe" frameborder="0" name="sfrm_mailing_list_members"></iframe>

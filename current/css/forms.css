@@ -1,0 +1,74 @@
+.formTable {
+	border: 1px solid #FF9900;
+}
+.tableHead_forms { 
+	background-color: #FF9900;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #000099 
+ }
+.tableBox_forms {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #000099;
+	background-color: #FFFFFF;
+}
+.input_textBox {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #000099;
+	background-color: #FFFFFF;
+	border: 1px solid #000099;
+}
+.input_button {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #000099;
+	padding: 3px;
+	border: 3px ridge #FF9900;
+	background-color: #FFFFFF;
+}
+.css_form{
+	padding: 12px; 
+	display: block;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 12px; 
+	font-weight: bold;
+}
+label{
+    clear: left;
+    float: left;
+    padding-right: 2px;
+    text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333399;
+	font-weight: bold;
+	margin: 5px;
+	text-align: left;
+	width: 80px;
+}
+label.no_clear{
+    float: none;
+    padding-right: 2px;
+    text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333399;
+	font-weight: bold;
+	margin: 5px;
+	text-align: left;
+}
+
+input, textarea, select{
+	margin: 4px;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 11px; 
+	font-weight: normal;
+}
